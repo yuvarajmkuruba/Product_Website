@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+.header{
+    padding: 1rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #1d1d23;
+}
+.logo img{
+    width: 60px;
+}
+.navbar a{
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.navbar a:hover{
+    color: var(--btn-color);
+}
+.icons div{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+.icons div:hover{
+    cursor: pointer;
+}
+
+.icons a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 18px;
+   transition: 0.5s;
+   display: inline-block;
+}
+.contact-btn:hover{
+    transform: scale(1.1);
+    background: var(--btn-color);
+    border: 1px solid white;
+}
+
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* design for home section */
+
+.home{
+    padding: 1rem 7%;
+    background: url(images/background.png);
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 150px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.home-inner-content{
+    flex: 1 1 45rem;
+}
+.home-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.home-image img{
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, -40%);
+    animation: mymove 5s infinite ease-in-out;
+}
+.home-text-content{
+    padding: 0 8rem;
+}
+.home-text-content h1{
+    font-size: 45px;
+    color: #e58f00;
+}
+.home-text-content p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.home-text-content a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 18px;
+   transition: 0.5s;
+   display: inline-block;
+}
+.home-text-content a:hover{
+    transform: scale(1.1);
+    background: var(--btn-color);
+    border: 1px solid white;
+}
