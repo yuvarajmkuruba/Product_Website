@@ -128,3 +128,43 @@ html{
     background: var(--btn-color);
     border: 1px solid white;
 }
+@media (max-width:767px) {
+    .header{
+        padding: 3rem;
+    }
+    .icons div{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: var(--btn-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .home-text-content{
+        padding: 0 2rem;
+    }
+    .main-home{
+        padding: 2rem 0;
+    }
+    .home{
+        padding-top: 100px;
+        
+    }
+    .home-image img{
+        transform: translate(0%, 0%);
+    }
+    .home-text-content{
+        margin-top: 300px;
+    }
+}
